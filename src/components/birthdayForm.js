@@ -19,6 +19,7 @@ class BirthdayForm extends Component {
         this.setState({
             startDate: date 
         })
+        alert(this.state.startDate);
     }
     
     
@@ -26,9 +27,10 @@ class BirthdayForm extends Component {
         return (
            <div>
                <h1>Birthday Form Component</h1>
-               <DatePicker />
+               <DatePicker
                     selected={this.state.startDate}
                     onChange={this.handleChange}
+                />
            </div>
         ) 
             
